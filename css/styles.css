@@ -18,6 +18,8 @@
     --shadow-area-portfolio: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     --shadow-area-portfolio-card:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+
     
     body{
         font-family:Roboto,sans-serif;
@@ -100,8 +102,8 @@
       letter-spacing: 0.02em;
       }
     
-      .nav-list .link-current{
-        padding-top: 32px; ;
+      .nav-list .link{
+        padding-top: 32px; 
         padding-bottom: 32px;
         display: block;
         text-align: center;
@@ -109,10 +111,20 @@
         font-size: 14px;
         line-height: 1.1;
         letter-spacing: 0.02em;
-        
-       color: var(--title-text-color);
+  
       }
     
+      .link-current{
+        padding-top: 32px; 
+        padding-bottom: 32px;
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+       color: var(--accent-color-header);
+      }
      .nav-list .navigate{
       
     margin-right: 50px;
@@ -262,13 +274,16 @@
     }
       /* картинки для второй секции на спрайтах */
 
-     .header-icons{
-       padding-top: 25px;
-       padding-bottom: 25px;
-       background: var(--accent-bgc-folio);
-       border-radius: 4px; 
-     }
-
+    
+     .picture-cards{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-bgc-folio);
+      border-radius: 4px;
+      margin-bottom: 30px;
+      height: 120px;
+    }
 
     .advantage .list-item:not(:last-child){
       margin-right: 30px;
@@ -405,7 +420,7 @@ padding: 0px;
   display:flex;
   flex-direction: row;
   align-items: center;
-  margin-right: -10px;
+  
 
 }
 
@@ -525,6 +540,7 @@ padding: 0px;
     
    .separation{
   display: flex;
+  align-items: base;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -615,8 +631,8 @@ padding: 0px;
     }
     
     
-    .cards-view .image-frame:hover,
-    .cards-view .image-frame:focus{
+    .cards-icons:hover,
+    .cards-icons:focus{
   
     box-shadow:var(--shadow-area-portfolio-card);
     }
